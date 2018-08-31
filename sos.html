@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+	
+</script>
+<style>
+h4 {
+	color: #ccff99;
+	font-family: Comic Sans MS;
+	font-size: 300%;
+}
+
+h3 {
+	color: black;
+	font-family: courier;
+	font-size: 200%
+}
+
+h2 {
+	color: #00ffff;
+	font-family: Comic Sans MS;
+	font-size: 400%;
+}
+
+body {
+	background-color: #ff9999;
+}
+
+#one {
+	background-color: cyan;
+	border-style: dotted;
+	padding: 45px;
+	font-size: 30px;
+	color: deeppink;
+	border-radius: 10px;
+}
+
+#two {
+	background-color: cyan;
+	border-style: dotted;
+	padding: 45px;
+	font-size: 30px;
+	color: deeppink;
+	border-radius: 10px;
+}
+
+#three {
+	background-color: cyan;
+	border-style: dotted;
+	padding: 45px;
+	font-size: 30px;
+	color: deeppink;
+	border-radius: 10px;
+}
+
+#four {
+	background-color: cyan;
+	border-style: dotted;
+	padding: 45px;
+	font-size: 30px;
+	color: deeppink;
+	border-radius: 10px;
+}
+
+#five {
+	background-color: cyan;
+	border-style: dotted;
+	padding: 45px;
+	font-size: 30px;
+	color: deeppink;
+	border-radius: 10px;
+}
+
+#six {
+	background-color: cyan;
+	border-style: dotted;
+	padding: 45px;
+	font-size: 30px;
+	color: deeppink;
+	border-radius: 10px;
+}
+
+#seven {
+	background-color: cyan;
+	border-style: dotted;
+	padding: 45px;
+	font-size: 30px;
+	color: deeppink;
+	border-radius: 10px;
+}
+
+#eight {
+	background-color: cyan;
+	border-style: dotted;
+	padding: 45px;
+	font-size: 30px;
+	color: deeppink;
+	border-radius: 10px;
+}
+
+#nine {
+	background-color: cyan;
+	border-style: dotted;
+	padding: 45px;
+	font-size: 30px;
+	color: deeppink;
+	border-radius: 10px;
+}
+
+ul.a {
+	list-style: square;
+	color: #ccffff;
+	font-size: 50px;
+	font-family: Comic Sans MS
+}
+
+table {
+	border: 100px solid;
+	padding: 50px;
+	border-color: #fc031c;
+	border-radius: 50px;
+}
+</style>
+</head>
+
+
+<body>
+	<center>
+		<img src="splash.jpg" alt="tic-tac-toe" width="1000" height="200">
+		<h3>TIC-TAC-TOE</h3>
+		<table>
+			<tr>
+				<td><input type="button" id="one"> <input type="button"
+					id="two"> <input type="button" id="three"><br>
+					<br> <input type="button" id="four"> <input
+					type="button" id="five"> <input type="button" id="six"><br>
+					<br> <input type="button" id="seven"> <input
+					type="button" id="eight"> <input type="button" id="nine">
+				</td>
+			</tr>
+		</table>
+		<h2 id="good"></h2>
+	</center>
+	</center>
+	<h4>INSTRUCTIONS :</h4>
+	<ul class="a">
+		<li>Hit the button three times per turn.</li>
+		<li>player 1 get's "0".</li>
+		<li>Player 2 get's "*".</li>
+	</ul>
+
+</body>
+
+
+
+<script>
+	var click = 0;
+	
+
+	$(document).ready(function() {
+
+		$("#one").click(function() {
+			$("#one").val("0");
+			window.click++;
+			if (click != 0 && click % 2 == 0) {
+				$("#one").val("1");
+			}
+           
+			document.getElementById("clicks").innerHTML = click;
+		})
+		$("#two").click(function() {
+			$("#two").val("0");
+			window.click++;
+			if (click != 0 && click % 2 == 0) {
+				$("#two").val("1");
+			}
+            else if(click == 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+			document.getElementById("clicks").innerHTML = click;
+		})
+		$("#three").click(function() {
+			$("#three").val("0");
+			window.click++;
+			if (click != 0 && click % 2 == 0) {
+				$("#three").val("1");
+			}
+            else if(click == 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+			document.getElementById("clicks").innerHTML = click;
+		})
+		$("#four").click(function() {
+			$("#four").val("0");
+			window.click++;
+			if (click != 0 && click % 2 == 0) {
+				$("#four").val("1");
+			}
+            else if(click == 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+			document.getElementById("clicks").innerHTML = click;
+		})
+		$("#five").click(function() {
+			$("#five").val("0");
+			window.click++;
+			if (click != 0 && click % 2 == 0) {
+				$("#five").val("1");
+			}
+            else if(click == 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+			document.getElementById("clicks").innerHTML = click;
+		})
+		$("#six").click(function() {
+			$("#six").val("0");
+			window.click++;
+			if (click != 0 && click % 2 == 0) {
+				$("#six").val("1");
+			}
+            else if(click == 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+			document.getElementById("clicks").innerHTML = click;
+		})
+		$("#seven").click(function() {
+			$("#seven").val("0");
+			window.click++;
+			if (click != 0 && click % 2 == 0) {
+				$("#seven").val("1");
+			}
+            else if(click == 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+			document.getElementById("clicks").innerHTML = click;
+		})
+		$("#eight").click(function() {
+			$("#eight").val("0");
+			window.click++;
+			if (click != 0 && click % 2 == 0) {
+				$("#eight").val("1");
+			}
+            else if(click == 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+			document.getElementById("clicks").innerHTML = click;
+		})
+		$("#nine").click(function() {
+			$("#nine").val("0");
+			window.click++;
+			if (click != 0 && click % 2 == 0) {
+				$("#nine").val("1");
+			}
+            else if(click == 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+			document.getElementById("clicks").innerHTML = click;
+		})
+	})
+</script>
+<script>
+   var fired_one = 4;
+	var fired_two = 2;
+	var fired_three = 3;
+	var fired_four = 4;
+	var fired_five = 5;
+	var fired_six = 6;
+	var fired_seven = 7;
+	var fired_eight = 8;
+	var fired_nine = 9;
+
+	$("#one")
+			.click(
+					function() {
+						 window.fired_one = $("#one").val();
+						console.log(fired_one);
+						if (((fired_one == fired_two) && (fired_two == fired_three))
+								|| ((fired_four == fired_five) && (fired_five == fired_six))
+								|| ((fired_seven == fired_eight) && (fired_eight == fired_nine))
+								|| ((fired_one == fired_four) && (fired_four == fired_seven))
+								|| ((fired_two == fired_five) && (fired_five == fired_eight))
+								|| ((fired_three == fired_six) && (fired_six == fired_nine))
+								|| ((fired_one == fired_five) && (fired_five == fired_nine))
+								|| ((fired_three == fired_five) && (fired_five == fired_seven))) {
+							document.getElementById("good").innerHTML = "YOU WERE WON";
+						}
+                        else if(click === 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+                        else{
+                            document.getElementById("good").innerHTML = "!...Don't exite...!";
+                        }
+					});
+	$("#two")
+			.click(
+					function() {
+						window.fired_two = $("#two").val();
+						console.log(fired_two);
+						if (((fired_one == fired_two) && (fired_two == fired_three))
+								|| ((fired_four == fired_five) && (fired_five == fired_six))
+								|| ((fired_seven == fired_eight) && (fired_eight == fired_nine))
+								|| ((fired_one == fired_four) && (fired_four == fired_seven))
+								|| ((fired_two == fired_five) && (fired_five == fired_eight))
+								|| ((fired_three == fired_six) && (fired_six == fired_nine))
+								|| ((fired_one == fired_five) && (fired_five == fired_nine))
+								|| ((fired_three == fired_five) && (fired_five == fired_seven))) {
+							document.getElementById("good").innerHTML = "YOU WERE WON...!";
+						}
+                        else if(click === 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+                        else{
+                            document.getElementById("good").innerHTML = "!...Don't exite...!";
+                        }
+					});
+	$("#three")
+			.click(
+					function() {
+						window.fired_three = $("#three").val();
+						console.log(fired_three);
+						if (((fired_one == fired_two) && (fired_two == fired_three))
+								|| ((fired_four == fired_five) && (fired_five == fired_six))
+								|| ((fired_seven == fired_eight) && (fired_eight == fired_nine))
+								|| ((fired_one == fired_four) && (fired_four == fired_seven))
+								|| ((fired_two == fired_five) && (fired_five == fired_eight))
+								|| ((fired_three == fired_six) && (fired_six == fired_nine))
+								|| ((fired_one == fired_five) && (fired_five == fired_nine))
+								|| ((fired_three == fired_five) && (fired_five == fired_seven))) {
+							document.getElementById("good").innerHTML = "YOU WERE WON...!";
+						}
+                        else if(click === 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+                        else{
+                            document.getElementById("good").innerHTML = "!...Don't exite...!";
+                        }
+					});
+	$("#four")
+			.click(
+					function() {
+						window.fired_four = $("#four").val();
+						console.log(fired_four);
+						if (((fired_one == fired_two) && (fired_two == fired_three))
+								|| ((fired_four == fired_five) && (fired_five == fired_six))
+								|| ((fired_seven == fired_eight) && (fired_eight == fired_nine))
+								|| ((fired_one == fired_four) && (fired_four == fired_seven))
+								|| ((fired_two == fired_five) && (fired_five == fired_eight))
+								|| ((fired_three == fired_six) && (fired_six == fired_nine))
+								|| ((fired_one == fired_five) && (fired_five == fired_nine))
+								|| ((fired_three == fired_five) && (fired_five == fired_seven))) {
+							document.getElementById("good").innerHTML = "YOU WERE WON...!";
+						}
+                        else if(click === 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+                        else{
+                            document.getElementById("good").innerHTML = "!...Don't exite...!";
+                        }
+					});
+	$("#five")
+			.click(
+					function() {
+						window.fired_five = $("#five").val();
+						console.log(fired_five);
+						if (((fired_one == fired_two) && (fired_two == fired_three))
+								|| ((fired_four == fired_five) && (fired_five == fired_six))
+								|| ((fired_seven == fired_eight) && (fired_eight == fired_nine))
+								|| ((fired_one == fired_four) && (fired_four == fired_seven))
+								|| ((fired_two == fired_five) && (fired_five == fired_eight))
+								|| ((fired_three == fired_six) && (fired_six == fired_nine))
+								|| ((fired_one == fired_five) && (fired_five == fired_nine))
+								|| ((fired_three == fired_five) && (fired_five == fired_seven))) {
+							document.getElementById("good").innerHTML = "YOU WERE WON...!";
+						}
+                        else if(click === 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+                        else{
+                            document.getElementById("good").innerHTML = "!...Don't exite...!";
+                        }
+					});
+	$("#six")
+			.click(
+					function() {
+						window.fired_six = $("#six").val();
+						console.log(fired_six);
+						if (((fired_one == fired_two) && (fired_two == fired_three))
+								|| ((fired_four == fired_five) && (fired_five == fired_six))
+								|| ((fired_seven == fired_eight) && (fired_eight == fired_nine))
+								|| ((fired_one == fired_four) && (fired_four == fired_seven))
+								|| ((fired_two == fired_five) && (fired_five == fired_eight))
+								|| ((fired_three == fired_six) && (fired_six == fired_nine))
+								|| ((fired_one == fired_five) && (fired_five == fired_nine))
+								|| ((fired_three == fired_five) && (fired_five == fired_seven))) {
+							document.getElementById("good").innerHTML = "YOU WERE WON...!";
+						}
+                        else if(click === 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+                        else{
+                            document.getElementById("good").innerHTML = "!...Don't exite...!";
+                        }
+					});
+	$("#seven")
+			.click(
+					function() {
+						window.fired_seven = $("#seven").val();
+						console.log(fired_seven);
+						if (((fired_one == fired_two) && (fired_two == fired_three))
+								|| ((fired_four == fired_five) && (fired_five == fired_six))
+								|| ((fired_seven == fired_eight) && (fired_eight == fired_nine))
+								|| ((fired_one == fired_four) && (fired_four == fired_seven))
+								|| ((fired_two == fired_five) && (fired_five == fired_eight))
+								|| ((fired_three == fired_six) && (fired_six == fired_nine))
+								|| ((fired_one == fired_five) && (fired_five == fired_nine))
+								|| ((fired_three == fired_five) && (fired_five == fired_seven))) {
+							document.getElementById("good").innerHTML = "YOU WERE WON...!";
+						}
+                        else if(click === 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+                        else{
+                            document.getElementById("good").innerHTML = "!...Don't exite...!";
+                        }
+					});
+	$("#eight")
+			.click(
+					function() {
+						window.fired_eight = $("#eight").val();
+						console.log(fired_eight);
+						if (((fired_one == fired_two) && (fired_two == fired_three))
+								|| ((fired_four == fired_five) && (fired_five == fired_six))
+								|| ((fired_seven == fired_eight) && (fired_eight == fired_nine))
+								|| ((fired_one == fired_four) && (fired_four == fired_seven))
+								|| ((fired_two == fired_five) && (fired_five == fired_eight))
+								|| ((fired_three == fired_six) && (fired_six == fired_nine))
+								|| ((fired_one == fired_five) && (fired_five == fired_nine))
+								|| ((fired_three == fired_five) && (fired_five == fired_seven))) {
+							document.getElementById("good").innerHTML = "YOU WERE WON...!";
+						}
+                        else if(click === 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+                        else{
+                            document.getElementById("good").innerHTML = "!...Don't exite...!";
+                        }
+					});
+	$("#nine")
+			.click(
+					function() {
+						window.fired_nine = $("#nine").val();
+						console.log(typeof (fired_nine));
+						if (((fired_one == fired_two) && (fired_two == fired_three))
+								|| ((fired_four == fired_five) && (fired_five == fired_six))
+								|| ((fired_seven == fired_eight) && (fired_eight == fired_nine))
+								|| ((fired_one == fired_four) && (fired_four == fired_seven))
+								|| ((fired_two == fired_five) && (fired_five == fired_eight))
+								|| ((fired_three == fired_six) && (fired_six == fired_nine))
+								|| ((fired_one == fired_five) && (fired_five == fired_nine))
+								|| ((fired_three == fired_five) && (fired_five == fired_seven))) {
+							document.getElementById("good").innerHTML = "YOU WERE WON...!";
+						}
+                        else if(click === 27){
+                            document.getElementById("good").innerHTML = "Game Over";
+                        }
+                        else{
+                            document.getElementById("good").innerHTML = "!...Don't exite...!";
+                        }
+					});
+</script>
+
+
+<h4 style="font-size: 25px">
+	Clicks: <a id="clicks">0</a>
+</h4
+</html>
